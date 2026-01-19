@@ -39,7 +39,7 @@ Think Time Formula:
 ├── Base time from game phase (inverted U-curve)
 ├── × Complexity factor (legal moves, captures, checks)
 ├── × Move type modifier (recaptures, forced moves, castling)
-├── × Time control scaling (bullet/blitz/rapid)
+├── × Time control scaling (blitz/rapid)
 ├── + Move correlation (40% weight from previous move)
 └── → Sample from log-normal distribution
 ```
@@ -59,7 +59,7 @@ Think Time Formula:
 
 ### Human Mode (Recommended)
 - **Maia ELO Selection**: Choose your simulated rating (1100-1900)
-- **Time Control Modes**: Bullet, Blitz, or Rapid timing profiles
+- **Time Control Modes**: Blitz or Rapid timing profiles
 - **Realistic Mistakes**: Plays like a human, not a superhuman
 - **Natural Timing**: Indistinguishable from human players
 
@@ -162,7 +162,7 @@ venv/bin/python3 src/gui_pyqt.py
 | Setting | Description |
 |---------|-------------|
 | **Maia ELO** | Simulated player rating (1100-1900). Higher = stronger but still human-like |
-| **Time Control** | Affects thinking times: Bullet (fast), Blitz (medium), Rapid (slow) |
+| **Time Control** | Affects thinking times: Blitz (faster) or Rapid (slower, more deliberate) |
 | **Use GPU** | Enable for faster inference if you have a compatible GPU |
 
 ### Non-Stop Matches
